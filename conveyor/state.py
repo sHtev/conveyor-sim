@@ -12,7 +12,7 @@ def initialise_state(belt_length, component_types, is_empty):
     lower = [('^', [], 0)] * belt_length
 
     if is_empty:
-        belt = [''] * belt_length
+        belt = [' '] * belt_length
     else:
         belt = get_new_items(component_types, belt_length)
 
