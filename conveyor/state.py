@@ -3,7 +3,7 @@ import string
 
 
 def get_new_items(component_types, number_of_items):
-    # Components are represented by upper case letters
+    # Components are represented by upper case letters
     choices = [' '] + list(string.ascii_uppercase[:component_types])
     return random.choices(choices, k=number_of_items)
 
